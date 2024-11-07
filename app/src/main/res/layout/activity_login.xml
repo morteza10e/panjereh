@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ui"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/login_logo"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:src="@drawable/instagram"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        app:tint="@android:color/white" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_logo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Username, email or mobile number"
+        android:paddingTop="13dp"
+        android:textColorHint="@color/black"
+        app:hintTextAppearance="@style/EditTextThemeOverlay">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputs_back"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="17sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        android:paddingTop="12dp"
+        app:hintTextAppearance="@style/EditTextThemeOverlay"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:id="@+id/textInputPassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+      >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPassword"
+            android:inputType="textVisiblePassword"
+            android:textColorHint="@color/black"
+            android:background="@drawable/inputs_back"
+            android:outlineProvider="none"
+            android:textColor="@color/black"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:text="Login"
+        android:background="@drawable/bg_btn"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/textInputPassword"
+        />
+
+    <TextView
+        android:id="@+id/signup_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="Don't have an account? Register"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn"
+        android:id="@+id/btnRegister"
+
+        android:layout_marginEnd="20dp"
+        android:text="new account || Register"
+        android:layout_marginBottom="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        />
+
+
+
+
+</RelativeLayout>
