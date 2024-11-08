@@ -131,7 +131,7 @@
         android:layout_marginBottom="5dp"
         android:layout_below="@id/description_txt"
         android:text="view all 2 comment"
-        android:textColor="#919090"
+        android:textColor="#858585"
         android:textSize="12sp" />
 
 
