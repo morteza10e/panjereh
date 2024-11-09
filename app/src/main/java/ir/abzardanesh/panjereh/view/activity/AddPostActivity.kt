@@ -1,7 +1,8 @@
-package ir.abzardanesh.panjereh
+package ir.abzardanesh.panjereh.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ir.abzardanesh.panjereh.R
 
 class AddPostActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

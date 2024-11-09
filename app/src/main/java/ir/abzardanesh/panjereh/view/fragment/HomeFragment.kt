@@ -1,4 +1,4 @@
-package ir.abzardanesh.panjereh
+package ir.abzardanesh.panjereh.view.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

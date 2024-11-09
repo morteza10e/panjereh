@@ -1,4 +1,4 @@
-package ir.abzardanesh.panjereh
+package ir.abzardanesh.panjereh.view.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,12 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import ir.abzardanesh.panjereh.view.fragment.ProfileFragment
+import ir.abzardanesh.panjereh.R
+import ir.abzardanesh.panjereh.view.fragment.SearchFragment
 import ir.abzardanesh.panjereh.databinding.ActivityMainBinding
+import ir.abzardanesh.panjereh.view.fragment.HomeFragment
+import ir.abzardanesh.panjereh.view.fragment.NotificationFragment
 
 class MainActivity : AppCompatActivity() {
 
